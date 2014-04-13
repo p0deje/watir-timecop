@@ -18,7 +18,7 @@ module Watir
 
       def wait(timeout, &block)
         Timeout.timeout(timeout) do
-          (timeout / Watir::Wait::INTERVAL).to_i.times &block
+          (timeout / Watir::Wait::INTERVAL).to_i.times(&block)
         end
       rescue Timeout::Error
         false
