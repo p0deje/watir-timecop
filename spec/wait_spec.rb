@@ -10,7 +10,7 @@ describe Watir::Wait do
 
   describe "#until" do
     it "waits until the block returns true" do
-      expect(Watir::Wait.until(0.5) { true }).to be_true
+      expect(Watir::Wait.until(0.5) { true }).to eq(true)
     end
 
     it "times out" do
