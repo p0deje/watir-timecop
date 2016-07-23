@@ -1,4 +1,4 @@
-# watir-timecop [![Gem Version](https://badge.fury.io/rb/watir-timecop.png)](http://badge.fury.io/rb/watir-timecop) [![Build Status](https://secure.travis-ci.org/p0deje/watir-timecop.png)](http://travis-ci.org/p0deje/watir-timecop)
+# watir-timecop [![Gem Version](https://badge.fury.io/rb/watir-timecop.svg)](http://badge.fury.io/rb/watir-timecop) [![Build Status](https://secure.travis-ci.org/p0deje/watir-timecop.svg)](http://travis-ci.org/p0deje/watir-timecop)
 
 Makes [Timecop](https://github.com/travisjeffery/timecop) compatible with [Watir](https://github.com/watir/watir-webdriver).
 
