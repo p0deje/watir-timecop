@@ -2,7 +2,7 @@
 
 Makes [Timecop](https://github.com/travisjeffery/timecop) compatible with [Watir](https://github.com/watir/watir-webdriver).
 
-The problem is that internally Watir uses `Time.now` when it waits for element presence/absence. Combined with Timecop, waiting gets broken because `Time.now` may always returns the same value. This gem implements custom timer for Watir, which uses `Timeout.timeout` instead.
+The problem is that internally Watir uses `Time.now` when it waits for element presence/absence. Combined with Timecop, waiting gets broken because `Time.now` may always returns the same value. This gem implements custom timer for Watir, which uses simple counter instead.
 
 ## Installation
 
@@ -43,4 +43,4 @@ require 'watir-timecop'
 
 ## Copyright
 
-Copyright (c) 2014 Alex Rodionov. See LICENSE.txt for details.
+Copyright (c) 2016 Alex Rodionov. See LICENSE.txt for details.
