@@ -1,8 +1,10 @@
 # watir-timecop [![Gem Version](https://badge.fury.io/rb/watir-timecop.svg)](http://badge.fury.io/rb/watir-timecop) [![Build Status](https://secure.travis-ci.org/p0deje/watir-timecop.svg)](http://travis-ci.org/p0deje/watir-timecop)
 
-Makes [Timecop](https://github.com/travisjeffery/timecop) compatible with [Watir](https://github.com/watir/watir-webdriver).
+Since Watir 6.0 its internal timer class no longer has the issue watir-timecop tries to workaround. If you use Watir 6.0 and Ruby 2.3, you don't need this gem. See watir/watir#486 for details.
 
-The problem is that internally Watir uses `Time.now` when it waits for element presence/absence. Combined with Timecop, waiting gets broken because `Time.now` may always returns the same value. This gem implements custom timer for Watir, which uses simple counter instead.
+~~Makes [Timecop](https://github.com/travisjeffery/timecop) compatible with [Watir](https://github.com/watir/watir-webdriver).~~
+
+~~The problem is that internally Watir uses `Time.now` when it waits for element presence/absence. Combined with Timecop, waiting gets broken because `Time.now` may always returns the same value. This gem implements custom timer for Watir, which uses simple counter instead.~~
 
 ## Installation
 
